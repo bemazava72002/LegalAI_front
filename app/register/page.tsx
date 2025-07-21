@@ -132,18 +132,16 @@ export default function ClientLoginPage() {
                 className="w-full bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 transition-all duration-200"
                 disabled={isLoading}
               >
-                {isLoading ? 'Connexion...' : 'Se connecter'}
+                {isLoading ? 'enregistrement...' : 'enregister'}
               </Button>
             </form>
             
             <div className="text-center space-y-4">
-              <Link href="#" className="text-sm text-blue-600 hover:text-blue-800 transition-colors">
-                Mot de passe oublié ?
-              </Link>
+              
               
               <div className="border-t pt-4">
                 <p className="text-sm text-gray-600">
-                  Pas encore de compte ?{' '}
+                  Avez vous déjà un compte ?{' '}
                   <Link href="/login" className="text-blue-600 hover:text-blue-800 font-medium transition-colors">
                     se connecter
                   </Link>
