@@ -37,12 +37,10 @@ export default function HomePage() {
               <Link href="#tarifs" className="text-gray-600 hover:text-blue-600 transition-colors">
                 Tarifs
               </Link>
-              <Link href="/client/login" className="text-gray-600 hover:text-blue-600 transition-colors">
+              <Link href="/login" className="text-gray-600 hover:text-blue-600 transition-colors">
                 Connexion
               </Link>
-              <Link href="/admin/login">
-                <Button variant="outline" size="sm">Admin</Button>
-              </Link>
+              
               <Link href="/client/dashboard">
                 <Button className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 transition-all duration-200">
                   Commencer
