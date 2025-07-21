@@ -69,7 +69,7 @@ export default function ClientLoginPage() {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email">Téléphone</Label>
                 <Input
                   id="tel"
                   type="tel"
@@ -79,7 +79,7 @@ export default function ClientLoginPage() {
                 />
               </div>
               <div className="space-y-2">
-                <Label htmlFor="email">Email</Label>
+                <Label htmlFor="email">Secteur d'activité</Label>
                 <Input
                   id="secteur"
                   type="text"
