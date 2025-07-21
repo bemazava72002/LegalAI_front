@@ -15,7 +15,9 @@ import {
   Users,
   CheckCircle,
   Star,
-  ArrowRight
+  ArrowRight,
+  Menu,
+  X
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -54,6 +56,18 @@ export default function HomePage() {
                 </Button>
               </Link>
             </nav>
+             <div className="flex items-center space-x-4">
+              
+              
+              <Button 
+                variant="ghost" 
+                size="sm"
+                className="md:hidden"
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+              >
+                {isMenuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              </Button>
+            </div>
           </div>
         </div>
          {isMenuOpen && (
