@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from 'react';
+
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -15,8 +19,11 @@ import {
 } from 'lucide-react';
 
 export default function HomePage() {
-
-
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+ const scrollToSection = (sectionId: string) => {
+    document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
+    setIsMenuOpen(false);
+  };
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50">
@@ -49,6 +56,29 @@ export default function HomePage() {
             </nav>
           </div>
         </div>
+         {isMenuOpen && (
+          <div className="md:hidden bg-white border-t border-slate-200">
+            <div className="container mx-auto px-4 py-4">
+              <div className="flex flex-col space-y-4">
+               <Link href="#fonctionnalites" className="text-gray-600 hover:text-blue-600 transition-colors">
+                Fonctionnalités
+              </Link>
+              <Link href="#tarifs" className="text-gray-600 hover:text-blue-600 transition-colors">
+                Tarifs
+              </Link>
+              <Link href="/login" className="text-gray-600 hover:text-blue-600 transition-colors">
+                Connexion
+              </Link>
+              
+              <Link href="/client/dashboard">
+                <Button className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 transition-all duration-200">
+                  Commencer
+                </Button>
+              </Link>
+              </div>
+            </div>
+          </div>
+        )}
       </header>
 
       
