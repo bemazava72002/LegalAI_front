@@ -17,7 +17,7 @@ import {
   TableRow,
 } from '@/components/ui/table';
 import { 
-  Shield, 
+  Scale, 
   Users, 
   FileText, 
   MessageCircle, 
@@ -48,8 +48,8 @@ export default function AdminDashboard() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
-              <div className="w-8 h-8 bg-gradient-to-br from-red-600 to-orange-700 rounded-lg flex items-center justify-center">
-                <Shield className="h-5 w-5 text-white" />
+              <div className="w-8 h-8 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-lg flex items-center justify-center">
+                <Scale className="h-5 w-5 text-white" />
               </div>
               <span className="text-xl font-bold text-gray-900">LegalAI Admin</span>
               <Badge variant="destructive" className="hidden sm:inline-flex">
