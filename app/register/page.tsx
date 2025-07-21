@@ -144,8 +144,8 @@ export default function ClientLoginPage() {
               <div className="border-t pt-4">
                 <p className="text-sm text-gray-600">
                   Pas encore de compte ?{' '}
-                  <Link href="/client/register" className="text-blue-600 hover:text-blue-800 font-medium transition-colors">
-                    Créer un compte
+                  <Link href="/client/login" className="text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                    se connecter
                   </Link>
                 </p>
               </div>
